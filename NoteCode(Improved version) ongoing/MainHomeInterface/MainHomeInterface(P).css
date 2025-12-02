@@ -1,0 +1,81 @@
+/* Doctop styles */
+
+.DockTop {
+    position: relative;
+    top: 5px;
+    left: 50%;
+    translate: -50% 0;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 242, 185);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.100);
+}
+
+.DockTop:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-name: dockTopHover;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+
+}
+
+.AppLogoDockTop {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.AppLogoDockTop:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.AppTitle {
+    position: fixed;
+    left: 55px;
+    font-size: 20px;
+    height: 100%;
+    font-weight: bold;
+    font-family: Arial;
+    color: #333;
+}
+
+.SearchBarDockTop {
+    position: absolute;
+    top: 8px;
+    height: 60%;
+    right: 155px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.UserIconDockTop {
+    position: absolute;
+    top: 16%;
+    right: 110px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.UsernameInfo {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    height: 100%;
+    font-size: 17px;
+    font-family: Arial;
+    color: #333;
+    font-weight: bold;
+}
