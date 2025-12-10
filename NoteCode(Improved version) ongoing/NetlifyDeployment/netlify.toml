@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "../MainHomeInterface/MainHomeInterface(Preview).html"
+status = 200
