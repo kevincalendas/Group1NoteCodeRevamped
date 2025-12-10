@@ -4,17 +4,35 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Main Home Interface Preview</title>
-        <link rel="stylesheet" href="../MainHomeInterface/MainHomeInterface(P).css">
+        <!-- CSS for Main Home Interface -->
+        <link rel="stylesheet" href="../MainHomeInterfacecss/MainHomeInterface(P).css">
+        <!-- CSS for More Options Window -->
+        <link rel="stylesheet" href="../MainHomeInterfacecss/MainHomeInterfaceMoreOptions.css">
     </head>
     <body>
+        <!-- JavaScripts -->
+        <script src="../MainHomeInterfaceJS/MoreOptionDockTopFunc.js"></script>
+
+        <!-- Dock Top -->
         <div class="DockTop">
             <img class="AppLogoDockTop" src="../MainHomeInterfaceIcons/LogoAPP.png" alt="App Logo">
             <h1 class ="AppTitle">Note#Code</h1>
-            <input class="SearchBarDockTop" type="text" placeholder="  Look for your notes">
-            <img class="UserIconDockTop" src="../MainHomeInterfaceIcons/userIcon.png" alt="User Icon">
-            <h1 class="UsernameInfo">MainUser</h1>
+            <button class="NewNoteButtonSearchDockTop">  🔍 Search</button>
+            <button class="CreateNoteButton">+</button>
+            <button class="MoreOptionMenuButton"><img class="MoreOptionIconButton" src="../MainHomeInterfaceIcons/MoreOptionsIcon.png" width="100%" height="100%" alt=""></button>
+        </div>
 
-
+        <!-- For More Option Window -->
+        <div class="MoreOptionWindow">
+            <div class="MoreOptionWindowProfileBar">
+                <img class="ProfileIcon" src="../UserIcon/User-Icon.png">
+                <h2 class="ProfileWindowTitleText">Username</h2>
+                <button class="MoreOptionProfileOpen">Open Profile</button>
+            </div>
+            <button class="Option1MoreOptionWindow">Profile  </button>
+            <button class="Option2MoreOptionWindow">Settings  </button>
+            <button class="Option3MoreOptionWindow">Help  </button>
+            <button class="Option4MoreOptionWindow">Logout  </button>
         </div>
     </body>
 </html>
