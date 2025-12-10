@@ -1,5 +1,5 @@
 .MoreOptionWindow {
-    display: grid;
+    display: none;
     overflow-x: hidden;
     overflow-y: scroll;
     grid-template-columns: 250px;
@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
-    row-gap: 10px;
+    row-gap: 0px;
     position: absolute;
     top: 70px;
     right: 20px;
@@ -15,7 +15,28 @@
     width: 300px;
     height: 300px;
     background-color: rgba(255, 252, 238, 1);
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    scale: 0.3;
+    opacity: 0;
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
@@ -31,6 +52,7 @@
     box-sizing: border-box;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-bottom: 3px;
 }
 
 .ProfileIcon {
@@ -45,7 +67,7 @@
 .ProfileWindowTitleText {
     position: absolute;
     top: 30px;
-    right: 50px;
+    left: 90px;
     font-weight: bold;
     font-size: 20px;
     font-family: Arial;
@@ -63,7 +85,7 @@
     font-size: 15px;
 }   
 
-.Option1MoreOptionWindow, .Option2MoreOptionWindow, .Option3MoreOptionWindow, .Option4MoreOptionWindow {
+.Option1MoreOptionWindow, .Option2MoreOptionWindow, .Option3MoreOptionWindow, .Option4MoreOptionWindow, .Option5MoreOptionWindow {
     top: 20px;
     left: 20px;
     width: 260px;
@@ -74,5 +96,132 @@
     font-size: 16px;
     font-weight: bold;
     text-align: right;
-    padding-left: 10px;
+    padding-right: 20px;
+    margin: 3px;
+}
+
+.Option1Img {
+    position: absolute;
+    border-radius: 10px;
+    top: 158px;
+    left: 17px;
+    width: 36px;
+    height: 36px;
+}
+
+.Option2Img {
+    position: absolute;
+    border-radius: 10px;
+    top: 204px;
+    left: 17px;
+    width: 36px;
+    height: 36px;
+}
+
+.Option3Img {
+    position: absolute;
+    border-radius: 10px;
+    top: 250px;
+    left: 17px;
+    width: 36px;
+    height: 36px;
+}
+
+.Option4Img {
+    position: absolute;
+    border-radius: 10px;
+    top: 296px;
+    left: 17px;
+    width: 36px;
+    height: 36px;
+}
+
+/* For Animations */
+
+@keyframes OpenTransformEffect {
+    0% {
+        display: block;
+        opacity: 0;
+        scale: 0.3;
+        transform: translate(310px, -515px);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.02);
+        filter: blur(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0px);
+    }
+}
+
+@keyframes OpenScaleEffect {
+    0% {
+        scale: 0.3;
+        animation-timing-function: cubic-bezier(.41,0,.27,1.02);
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes CloseTransformEffect {
+    0% {
+        
+        opacity: 1;
+        transform: translate(0);
+        animation-timing-function: ease-in;
+        filter: blur(0px);
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        transform: translate(310px, -515px);
+        filter: blur(20px);
+    }
+}
+
+@keyframes CloseScaleEffect {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0.3;
+        animation-timing-function: cubic-bezier(.41,0,.27,1.02);
+    }
+}
+
+@keyframes OpenFadeEffect {
+    0% {
+        opacity: 0;
+        scale: 0.5;
+        filter: blur(20px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        display: grid;
+        opacity: 1;
+        scale: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes CloseFadeEffect {
+    0% {
+        opacity: 1;
+        scale: 1;
+        filter: blur(0px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        display: grid;
+        opacity: 0;
+        scale: 0.5;
+        filter: blur(20px);
+    }
 }

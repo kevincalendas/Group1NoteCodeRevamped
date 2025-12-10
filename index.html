@@ -4,15 +4,44 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Main Home Interface Preview</title>
-        <link rel="stylesheet" href="NoteCode(Improved version) ongoing/MainHomeInterface/MainHomeInterface(P).css">
+        <!-- CSS for Main Home Interface -->
+        <link rel="stylesheet" href="NoteCode(Improved version) ongoing/MainHomeInterfacecss/MainHomeInterface(P).css">
+        <!-- CSS for More Options Window -->
+        <link rel="stylesheet" href="NoteCode(Improved version) ongoing/MainHomeInterfacecss/MainHomeInterfaceMoreOptions.css">
     </head>
     <body>
+        <!-- JavaScripts -->
+        <script src="NoteCode(Improved version) ongoing/MainHomeInterfaceJS/MoreOptionDockTopFunc.js"></script>
+
+        <!-- Dock Top -->
         <div class="DockTop">
             <img class="AppLogoDockTop" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/LogoAPP.png" alt="App Logo">
             <h1 class ="AppTitle">Note#Code</h1>
-            <input class="SearchBarDockTop" type="button" placeholder="  Look for your notes">
-            <img class="UserIconDockTop" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png" alt="User Icon">
-            <h1 class="UsernameInfo">MainUser</h1>
+            <button class="NewNoteButtonSearchDockTop">  🔍 Search</button>
+            <button class="CreateNoteButton">+</button>
+            <button class="MoreOptionMenuButton">+</button>
+            <button class="MoreOptionMenuButton" onclick="MainOptionsOpen()">-</button>
+        </div>
+
+        <!-- For More Option Window -->
+        <div class="MoreOptionWindow" id="MoreOptionWindow">
+            <div class="MoreOptionWindowProfileBar">
+                <img class="ProfileIcon" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png">
+                <h2 class="ProfileWindowTitleText">Username</h2>
+                <button class="MoreOptionProfileOpen">Open Profile</button>
+            </div>
+            <button class="Option1MoreOptionWindow">
+                <img class="Option1Img" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png" width="40px" height="40px" alt="">
+                Profile  </button>
+            <button class="Option2MoreOptionWindow"> 
+                <img class="Option2Img" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png" width="40px" height="40px" alt="">
+                Organize  </button>
+            <button class="Option3MoreOptionWindow">
+                <img class="Option3Img" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png" width="40px" height="40px" alt="">
+                Checklist  </button>
+            <button class="Option4MoreOptionWindow">
+                <img class="Option4Img" src="NoteCode(Improved version) ongoing/MainHomeInterfaceIcons/userIcon.png" width="40px" height="40px" alt="">
+                Settings  </button>
         </div>
     </body>
 </html>
