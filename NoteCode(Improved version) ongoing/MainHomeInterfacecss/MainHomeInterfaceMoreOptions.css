@@ -83,6 +83,20 @@
     font-weight: bold;
     font-family: Arial;
     font-size: 15px;
+    display: none;
+    visibility: collapse;
+}   
+
+.LoginMoreOptionButton {
+    position: absolute;
+    bottom: 160px;
+    width: 238px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 15px;
 }   
 
 .Option1MoreOptionWindow, .Option2MoreOptionWindow, .Option3MoreOptionWindow, .Option4MoreOptionWindow, .Option5MoreOptionWindow {
@@ -90,14 +104,20 @@
     left: 20px;
     width: 260px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     text-align: right;
     padding-right: 20px;
     margin: 3px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Option1MoreOptionWindow:hover, .Option2MoreOptionWindow:hover, .Option3MoreOptionWindow:hover, .Option4MoreOptionWindow:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .Option1Img {

@@ -1,0 +1,14 @@
+@keyframes ButtonClicked {
+    0% {
+        scale: 1;
+    }
+
+    30% {
+        scale: 0.7;
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    100% {
+        scale: 1;
+    }
+}
