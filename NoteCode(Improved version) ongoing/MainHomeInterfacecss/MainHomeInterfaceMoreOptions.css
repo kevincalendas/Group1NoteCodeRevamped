@@ -144,8 +144,8 @@
         opacity: 0;
         scale: 0.3;
         transform: translate(310px, -515px);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.02);
         filter: blur(20px);
+        animation-timing-function: cubic-bezier(.67,.01,0,1);
     }
 
     100% {
@@ -171,7 +171,7 @@
         
         opacity: 1;
         transform: translate(0);
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in
     }
 
     100% {
@@ -188,7 +188,7 @@
 
     100% {
         scale: 0.3;
-        animation-timing-function: cubic-bezier(.41,0,.27,1.02);
+        animation-timing-function: cubic-bezier(.02,0,1,-0.04);
     }
 }
 
