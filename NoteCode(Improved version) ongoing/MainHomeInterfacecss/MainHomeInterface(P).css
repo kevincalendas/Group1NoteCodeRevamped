@@ -76,10 +76,12 @@
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .CreateNoteButton:hover {
-    scale: 1.2;
+    scale: 1.05;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .MoreOptionMenuButton {
